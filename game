@@ -1,0 +1,24 @@
+#This program is a rock paper scissors game 
+import random
+
+choice = input('Type in rock, paper, or scissors: ')
+
+
+dictionary = dict = {'rock':1,'paper':2,'scissors':3}
+
+computer_choice = random.randint(1,3)
+
+if dictionary[choice] == computer_choice:
+    print('This is a tie. I chose the same thing.')
+elif dictionary[choice] == 1 and computer_choice == 2:
+    print('You lose. I chose paper.')
+elif dictionary[choice] == 1  and computer_choice == 3:
+    print('You win. I chose scissors.')
+elif dictionary[choice] == 2  and computer_choice == 1:
+    print('You win. I chose rock.')
+elif dictionary[choice] == 2  and computer_choice == 3:
+    print('You lose. I chose scissors.')
+elif dictionary[choice] == 3  and computer_choice == 1:
+    print('You lose. I chose rock.')
+elif dictionary[choice] == 3  and computer_choice == 2:
+    print('You win. I chose paper.')
